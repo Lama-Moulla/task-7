@@ -1,0 +1,205 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.white_spacing{
+    padding: 0 160px;
+}
+
+header{
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px !important;
+
+        a{
+            font-size:  20px;
+            color: black;
+            text-decoration: none;  
+        }
+        
+    }
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+    .userPart{
+        padding: 80px;
+        background-color: #fafafa;
+        border: 2px solid black;
+        box-shadow: 0 0 10px rgba(128, 126, 126, 0.4);
+        border-radius: 10px;
+    }
+
+    section{
+        
+
+        .btn{
+            width: fit-content;
+            padding: 3px;
+            background-color: white;
+            border: 1px solid rgb(128, 126, 126);
+            box-shadow: 0 0 10px rgba(128, 126, 126, 0.05);
+            border-radius: 6px;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        form{
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 16px;
+
+            input{
+                border: 1px solid rgb(128, 126, 126);
+                box-shadow: 0 0 10px rgba(128, 126, 126, 0.2);
+                border-radius: 4px;
+            }
+
+            select{
+                border: 1px solid rgb(128, 126, 126);
+                box-shadow: 0 0 10px rgba(128, 126, 126, 0.2);
+                border-radius: 4px;
+            }
+        }
+
+        table{
+            margin-top:20px;
+
+            th , td{
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 12px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.05);
+                padding:  8px 16px;
+            }
+
+            .tdImage{
+                display: none;
+            }
+
+            .tdImage {
+                max-width: 240px;
+                overflow-x: scroll;
+                input[type="text"] {
+                width: 100%;
+            }
+            }
+
+
+            .imageColumn{
+                display: none;
+            }
+
+            tbody{
+                form{
+                    display: none;
+                }
+
+                .spanImage{
+                    display: none;
+                }
+            }
+        }
+
+        
+
+        .slider {
+            width: 80vw;
+            height: 60vh;
+            margin: 10vh auto;
+            padding: 24px;
+            border: 2px solid black;
+            box-shadow: 0 0 10px rgba(128, 126, 126, 0.2);
+            overflow: hidden;
+            position: relative;
+            background-color: #fafafa;
+            border-radius: 10px;
+        }
+
+        .slidesWrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            flex: 0 0 calc(100% / 3);
+            padding: 24px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                width: 50%;
+                margin: 0 auto;
+                height: 60%;
+                border-radius: 8px; 
+            }
+
+            h3 {
+                font-size: 1.1rem;
+                text-align: center;
+                margin: 10px 0 5px;
+            }
+
+            p {
+                color: #333;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .dote {
+            width: 12px;
+            height: 12px;
+            border: 1px solid black;
+            border-radius: 50%;
+            cursor: pointer;    
+        }
+
+        .dote.active {
+            background-color: black;
+        }
+
+        .arrows button {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: black;
+        }
+    }
+}

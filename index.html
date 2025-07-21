@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Simple E-commerce UI</title>
+</head>
+<body>
+    <header>
+        <nav class="white_spacing">
+            <h1>Home Page</h1>
+            <a href="./admin.html"><span class="admin">control</span></a>
+        </nav>
+    </header>
+    <main  class="white_spacing">
+        <section>
+            <h1>User's card</h1>
+            <form>
+                <div>
+                    <label for="name">Search about Product : </label>
+                    <input type="search" placeholder="search by name" id="name">
+                    <input type="submit" value="send" class="btn">
+                    
+                </div>
+                <div>
+                    <label for="category">Choose the category : </label>
+                    <select name="" id="category">
+                        <option value="all">All</option>
+                        <option value="clothes">clothes</option>
+                        <option value="electronic">electronic</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sort">Choose the sort : </label>
+                    <select name="" id="sort">
+                        <option value="">sort by price</option>
+                        <option value="expencive">More expencive</option>
+                        <option value="cheap">More cheap</option>
+                    </select>
+                </div>
+                <input type="reset" value="reset" class="btn">
+            </form>
+
+            <div class="slider">
+
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

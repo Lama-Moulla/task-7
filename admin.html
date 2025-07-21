@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <header>
+        <nav class="white_spacing">
+            <h1>Admin panel</h1>
+            <a href="./index.html">Get Back</a>
+        </nav>
+    </header>
+    <main  class="white_spacing">
+        <section class="userPart">
+            <h1>Admin's card</h1>
+            <form id="productForm">
+                <div>
+                    <label for="ProductName">ProductName : </label>
+                    <input type="text" placeholder="Product name" id="ProductName" required>
+                </div>
+                <div>
+                    <label for="price">Price : </label>
+                    <input type="text" placeholder="price" id="price" required>
+                </div>
+                <div>
+                    <label for="category">Choose the category : </label>
+                    <select name="choose" id="category" >
+                        <option value="clothes">clothes</option>
+                        <option value="electronic">electronic</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Image">Image : </label>
+                    <input type="text" placeholder="URL()" id="image" required>
+                </div>
+                    <input type="submit" value="add" id="send" class="btn">
+            </form>
+            <table class="products">
+                <thead>
+                    <tr>
+                        <th>ProductName</th>
+                        <th> Price</th>
+                        <th>Category</th>
+                        <th class="imageColumn">Image</th>
+                        <th>process</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+
+    <script src="./assets/js/admin.js"></script>
+</body>
+</html>
