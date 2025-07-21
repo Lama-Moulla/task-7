@@ -137,6 +137,11 @@ function renderSlider(productsToShow) {
         total: productsToShow.length,
         maxIndex: totalMovements - 1
     }
+
+    if (productsToShow.length <= 3) {
+    arrows.style.display = "none";
+}
+
 }
 
 function moveToSlide(index) {
